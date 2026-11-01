@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loane Hautot - Portfolio BTS SIO SISR</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { 50: '#eff6ff', 500: '#3b82f6', 600: '#2563eb', 700: '#1d4ed8', 900: '#1e3a8a' }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px); }
+        .dark .glass { background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(10px); }
+    </style>
+</head>
+<body class="bg-slate-50 dark:bg-slate-950 text-slate-800 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col justify-between">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="sticky top-0 z-50 glass border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-500/30">
+                    LH
+                </div>
+                <div>
+                    <span class="font-bold text-lg tracking-tight">Loane Hautot</span>
+                    <span class="block text-xs text-slate-500 dark:text-slate-400">BTS SIO SISR</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center space-x-1 lg:space-x-2">
+                <a href="#accueil" class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition">Accueil</a>
+                <a href="#apropos" class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition">À propos</a>
+                <a href="#formations" class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition">Formations</a>
+                <a href="#experiences" class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition">CV & Expériences</a>
+                <a href="#competences" class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition">Compétences</a>
+                <a href="#projets" class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition">Projets</a>
+                <a href="#veille" class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition">Veille</a>
+                <a href="#contact" class="px-3 py-2 rounded-lg text-sm font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition">Contact</a>
+            </nav>
+
+            <div class="flex items-center space-x-2">
+                <button id="theme-toggle" class="p-2 rounded-lg bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:scale-105 transition">
+                    <i class="fa-solid fa-moon dark:hidden"></i>
+                    <i class="fa-solid fa-sun hidden dark:inline"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="flex-grow">
+        
+        <!-- SECTION ACCUEIL -->
+        <section id="accueil" class="py-20 lg:py-32 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-6">
+                        <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-600 dark:text-blue-400 text-sm font-medium">
+                            <span class="w-2 h-2 rounded-full bg-blue-600 animate-pulse"></span>
+                            <span>2026-2028 • Lycée Gustave Flaubert Rouen</span>
+                        </div>
+                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
+                            LOANE <span class="text-blue-600 dark:text-blue-500">HAUTOT</span>
+                        </h1>
+                        <p class="text-xl text-slate-600 dark:text-slate-300 font-medium">
+                            Étudiante en BTS SIO (Option SISR)
+                        </p>
+                        <p class="text-slate-500 dark:text-slate-400 max-w-lg">
+                            Spécialisée en Solutions d'Infrastructure, Systèmes et Réseaux au lycée Gustave Flaubert à Rouen. Passionnée par l'administration système, la cybersécurité et la résolution de défis techniques.
+                        </p>
+                        <div class="flex flex-wrap gap-4 pt-4">
+                            <a href="#projets" class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium shadow-lg shadow-blue-600/30 transition transform hover:-translate-y-0.5">
+                                Voir mes projets
+                            </a>
+                            <a href="#contact" class="px-6 py-3 rounded-xl border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 font-medium transition">
+                                Me contacter
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative flex justify-center">
+                        <div class="w-72 h-72 sm:w-96 sm:h-96 rounded-3xl bg-gradient-to-tr from-blue-600 to-indigo-500 p-2 shadow-2xl shadow-blue-500/20 rotate-3 hover:rotate-0 transition duration-500">
+                            <div class="w-full h-full bg-slate-900 rounded-2xl overflow-hidden flex items-center justify-center relative">
+                                <div class="absolute inset-0 bg-blue-900/20 flex items-center justify-center">
+                                    <i class="fa-solid fa-server text-6xl text-blue-400 opacity-80"></i>
+                                </div>
+                                <div class="absolute bottom-4 left-4 right-4 glass p-4 rounded-xl text-xs space-y-1">
+                                    <div class="font-mono text-blue-600 dark:text-blue-400 font-bold">sisr_infrastructure.config</div>
+                                    <div class="font-mono text-slate-600 dark:text-slate-300">statut: Systèmes & Réseaux OK</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION À PROPOS -->
+        <section id="apropos" class="py-20 bg-slate-100/50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-blue-600 dark:text-blue-400 font-semibold text-sm uppercase tracking-wider">01 / À propos</span>
+                    <h2 class="text-3xl font-bold mt-2">Présentation</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="glass p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-user-graduate"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Profil</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Actuellement étudiante en 1ère année de BTS SIO option SISR au lycée Gustave Flaubert à Rouen. Curieuse et motivée par la découverte des architectures réseau.
+                        </p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Domaine SISR</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Solutions d'Infrastructure, Systèmes et Réseaux. Administration, sécurisation et maintenance des parcs informatiques et des environnements virtuels.
+                        </p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2">Qualités</h3>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
+                            Rigueur, autonomie et esprit d'équipe développés lors de mes expériences professionnelles et de mes engagements citoyens (SNU, Conforma).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION FORMATIONS -->
+        <section id="formations" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-blue-600 dark:text-blue-400 font-semibold text-sm uppercase tracking-wider">02 / Formations</span>
+                    <h2 class="text-3xl font-bold mt-2">Parcours Académique</h2>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    <div class="glass p-8 rounded-2xl border border-slate-200 dark:border-slate-800 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 px-4 py-1 bg-blue-600 text-white text-xs font-bold rounded-bl-xl">2026 - 2028</div>
+                        <h3 class="text-xl font-bold">BTS SIO (Option SISR)</h3>
+                        <p class="text-blue-600 dark:text-blue-400 font-medium text-sm mt-1">Lycée Gustave Flaubert - Rouen</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mt-4 leading-relaxed">
+                            Services Informatiques aux Organisations. Spécialisation en Solutions d'Infrastructure, Systèmes et Réseaux. Administration réseau, maintenance et sécurité informatique.
+                        </p>
+                    </div>
+                    <div class="glass p-8 rounded-2xl border border-slate-200 dark:border-slate-800 relative overflow-hidden">
+                        <div class="absolute top-0 right-0 px-4 py-1 bg-slate-700 text-white text-xs font-bold rounded-bl-xl">2022 - 2026</div>
+                        <h3 class="text-xl font-bold">BAC STI2D (Option SIN)</h3>
+                        <p class="text-blue-600 dark:text-blue-400 font-medium text-sm mt-1">Lycée Jacques Prévert - Pont-Audemer</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-sm mt-4 leading-relaxed">
+                            Sciences et Technologies de l'Industrie et du Développement Durable. Option Systèmes d'Information et Numérique. Mention Assez Bien.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center space-x-4">
+                        <div class="p-3 bg-blue-500/10 text-blue-600 rounded-lg"><i class="fa-solid fa-certificate text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold text-sm">Certification PIX</h4>
+                            <p class="text-xs text-slate-500">409 PIX - Indépendant 2</p>
+                        </div>
+                    </div>
+                    <div class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center space-x-4">
+                        <div class="p-3 bg-red-500/10 text-red-600 rounded-lg"><i class="fa-solid fa-kit-medical text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold text-sm">PSC1</h4>
+                            <p class="text-xs text-slate-500">Croix-Rouge Française</p>
+                        </div>
+                    </div>
+                    <div class="p-5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 flex items-center space-x-4">
+                        <div class="p-3 bg-green-500/10 text-green-600 rounded-lg"><i class="fa-solid fa-id-card text-xl"></i></div>
+                        <div>
+                            <h4 class="font-bold text-sm">Permis de conduire B</h4>
+                            <p class="text-xs text-slate-500">Mobilité autonome</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION EXPERIENCES -->
+        <section id="experiences" class="py-20 bg-slate-100/50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-blue-600 dark:text-blue-400 font-semibold text-sm uppercase tracking-wider">03 / Expériences</span>
+                    <h2 class="text-3xl font-bold mt-2">Parcours Professionnel & Engagements</h2>
+                </div>
+                <div class="space-y-8 max-w-3xl mx-auto">
+                    <div class="glass p-6 rounded-2xl border border-slate-200 dark:border-slate-800 relative pl-8 border-l-4 border-l-blue-600">
+                        <span class="text-xs text-blue-600 dark:text-blue-400 font-bold">Juin - Août 2026</span>
+                        <h3 class="text-lg font-bold mt-1">Vendeuse en électroménager • CONFORAMA</h3>
+                        <p class="text-xs text-slate-500 mb-2">Le Havre (76)</p>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Vente en gros et petit électroménager. Gestion de la relation client, conseil personnalisé et rigueur dans l'organisation.</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl border border-slate-200 dark:border-slate-800 relative pl-8 border-l-4 border-l-blue-600">
+                        <span class="text-xs text-blue-600 dark:text-blue-400 font-bold">2024</span>
+                        <h3 class="text-lg font-bold mt-1">SNU Phase 2 (Cadet de la Gendarmerie)</h3>
+                        <p class="text-xs text-slate-500 mb-2">Caserne Amey - Évreux (27)</p>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">15 jours en internat (théorie et pratique) + 84h de T.I.G. Développement de la cohésion, du respect des procédures et de l'autonomie.</p>
+                    </div>
+                    <div class="glass p-6 rounded-2xl border border-slate-200 dark:border-slate-800 relative pl-8 border-l-4 border-l-blue-600">
+                        <span class="text-xs text-blue-600 dark:text-blue-400 font-bold">2022</span>
+                        <h3 class="text-lg font-bold mt-1">Stage d'observation • Usine RENAULT</h3>
+                        <p class="text-xs text-slate-500 mb-2">Sandouville (76)</p>
+                        <p class="text-sm text-slate-600 dark:text-slate-400">Découverte du milieu industriel et sensibilisation initiale à la cybersécurité des infrastructures de production.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION COMPETENCES -->
+        <section id="competences" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-blue-600 dark:text-blue-400 font-semibold text-sm uppercase tracking-wider">04 / Compétences</span>
+                    <h2 class="text-3xl font-bold mt-2">Savoir-Faire & Langages</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="glass p-8 rounded-2xl border border-slate-200 dark:border-slate-800">
+                        <h3 class="text-xl font-bold mb-6 flex items-center"><i class="fa-solid fa-code text-blue-600 mr-3"></i> Langages & Outils</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between text-sm font-medium mb-1"><span>HTML / CSS</span><span>Maîtrisé</span></div>
+                                <div class="w-full bg-slate-200 dark:bg-slate-800 h-2.5 rounded-full overflow-hidden"><div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm font-medium mb-1"><span>Python</span><span>Intermédiaire</span></div>
+                                <div class="w-full bg-slate-200 dark:bg-slate-800 h-2.5 rounded-full overflow-hidden"><div class="bg-blue-600 h-2.5 rounded-full" style="width: 70%"></div></div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between text-sm font-medium mb-1"><span>Arduino / Systèmes Embarqués</span><span>Pratique</span></div>
+                                <div class="w-full bg-slate-200 dark:bg-slate-800 h-2.5 rounded-full overflow-hidden"><div class="bg-blue-600 h-2.5 rounded-full" style="width: 65%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass p-8 rounded-2xl border border-slate-200 dark:border-slate-800">
+                        <h3 class="text-xl font-bold mb-6 flex items-center"><i class="fa-solid fa-language text-blue-600 mr-3"></i> Langues Vivantes</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center justify-between p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+                                <span class="font-bold">Anglais (LV1)</span>
+                                <span class="px-3 py-1 bg-blue-500/10 text-blue-600 rounded-lg text-sm font-medium">Niveau A1</span>
+                            </div>
+                            <div class="flex items-center justify-between p-4 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900">
+                                <span class="font-bold">Espagnol (LV2)</span>
+                                <span class="px-3 py-1 bg-blue-500/10 text-blue-600 rounded-lg text-sm font-medium">Niveau A1</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION PROJETS -->
+        <section id="projets" class="py-20 bg-slate-100/50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-blue-600 dark:text-blue-400 font-semibold text-sm uppercase tracking-wider">05 / Projets</span>
+                    <h2 class="text-3xl font-bold mt-2">Réalisations Techniques</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="glass p-8 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="px-3 py-1 bg-blue-500/10 text-blue-600 rounded-lg text-xs font-bold">Robotique & Python</span>
+                                <i class="fa-solid fa-robot text-2xl text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Projet Robot Démineur</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                                Étude et expérimentation autour du pilotage à l'aide d'une vision première personne (casque FPV), programmation de commandes à distance et mécanismes de désamorçage.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
+                            <span class="px-2.5 py-1 rounded bg-slate-200 dark:bg-slate-800">Python</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-200 dark:bg-slate-800">Arduino</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-200 dark:bg-slate-800">FPV</span>
+                        </div>
+                    </div>
+                    <div class="glass p-8 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+                        <div>
+                            <div class="flex justify-between items-start mb-4">
+                                <span class="px-3 py-1 bg-blue-500/10 text-blue-600 rounded-lg text-xs font-bold">Conception & DAO</span>
+                                <i class="fa-solid fa-house-chimney text-2xl text-blue-600"></i>
+                            </div>
+                            <h3 class="text-xl font-bold mb-2">Projet Village Miniature</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-sm leading-relaxed mb-6">
+                                Modélisation sur SolidWorks et réalisation technique d'une maquette de village miniature, découpe laser numérique et installation de circuits électriques avec LEDs.
+                            </p>
+                        </div>
+                        <div class="flex flex-wrap gap-2 text-xs font-medium text-slate-500">
+                            <span class="px-2.5 py-1 rounded bg-slate-200 dark:bg-slate-800">SolidWorks</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-200 dark:bg-slate-800">Découpe Laser</span>
+                            <span class="px-2.5 py-1 rounded bg-slate-200 dark:bg-slate-800">STI2D</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION VEILLE -->
+        <section id="veille" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center max-w-2xl">
+                <span class="text-blue-600 dark:text-blue-400 font-semibold text-sm uppercase tracking-wider">06 / Veille</span>
+                <h2 class="text-3xl font-bold mt-2 mb-6">La Veille Technologique</h2>
+                <div class="glass p-8 rounded-2xl border border-slate-200 dark:border-slate-800">
+                    <p class="text-slate-600 dark:text-slate-400 text-sm">
+                        Espace dédié au suivi des innovations en infrastructures, systèmes et sécurité informatique dans le cadre du BTS SIO SISR.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION CONTACT -->
+        <section id="contact" class="py-20 bg-slate-100/50 dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <span class="text-blue-600 dark:text-blue-400 font-semibold text-sm uppercase tracking-wider">07 / Contact</span>
+                    <h2 class="text-3xl font-bold mt-2">Me Contacter</h2>
+                    <p class="text-slate-500 text-sm mt-2">En recherche active de stage dans le cadre du BTS SIO SISR.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="glass p-8 rounded-2xl border border-slate-200 dark:border-slate-800 space-y-6">
+                        <h3 class="text-xl font-bold">Coordonnées</h3>
+                        <div class="space-y-4 text-sm">
+                            <div class="flex items-center space-x-3 text-slate-600 dark:text-slate-300">
+                                <i class="fa-solid fa-envelope text-blue-600 w-5"></i>
+                                <span>hautot.loanesio@gmail.com</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-slate-600 dark:text-slate-300">
+                                <i class="fa-solid fa-phone text-blue-600 w-5"></i>
+                                <span>07 84 68 59 96</span>
+                            </div>
+                            <div class="flex items-center space-x-3 text-slate-600 dark:text-slate-300">
+                                <i class="fa-solid fa-location-dot text-blue-600 w-5"></i>
+                                <span>12 chemin des noyers, 76240 Bonsecours</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass p-8 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col justify-center text-center space-y-4">
+                        <h3 class="text-xl font-bold">Envie d'en savoir plus ?</h3>
+                        <p class="text-slate-500 text-sm">N'hésitez pas à me contacter pour toute opportunité de stage ou collaboration.</p>
+                        <a href="mailto:hautot.loanesio@gmail.com" class="inline-block px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-medium shadow-lg shadow-blue-600/30 transition">
+                            Envoyer un email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-8 text-center text-sm text-slate-500">
+        <p>© 2026 Loane Hautot • BTS SIO SISR • Tous droits réservés.</p>
+    </footer>
+
+    <script>
+        const themeToggle = document.getElementById('theme-toggle');
+        themeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>
